@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GoRestXamarin.Views.AddUser">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Label Text="Name:" Grid.Row="0" Grid.Column="0" FontSize="13"/>
+                <Entry Text="{Binding UserModel.name}" Grid.Row="0" Grid.Column="2" FontSize="13"/>
+
+
+                <Label Text="Email:" Grid.Row="1" Grid.Column="0" FontSize="13"/>
+                <Entry Text="{Binding UserModel.email}" Grid.Row="1" Grid.Column="2" FontSize="13"/>
+
+
+                <Label Text="Gender:" Grid.Row="2" Grid.Column="0" FontSize="13"/>
+                <Picker SelectedItem="{Binding UserModel.gender}" Grid.Row="2" Title="Please Select" Grid.Column="2">
+                    <Picker.Items>
+                        <x:String>Male</x:String>
+                        <x:String>Female</x:String>
+                    </Picker.Items>
+                </Picker>
+
+
+                <Label Text="Status:" Grid.Row="3" Grid.Column="0" FontSize="13"/>
+                <Picker SelectedItem="{Binding UserModel.status}" Grid.Row="3" Title="Please Select" Grid.Column="2">
+                    <Picker.Items>
+                        <x:String>Active</x:String>
+                        <x:String>Inactive</x:String>
+                    </Picker.Items>
+                </Picker>
+
+
+                <Button Text="Save User" TextColor="White" CornerRadius="5" BackgroundColor="{StaticResource Primary}" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="FillAndExpand"  Command="{Binding SaveUserCommand}"/>
+
+            </Grid>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

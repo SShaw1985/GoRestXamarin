@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"    
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    x:Class="GoRestXamarin.Views.HomePage"
+    Title="{Binding Title}"
+    x:Name="HomePageName">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding AddUserCommand}"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="White" Padding="0,0,0,0" Spacing="0">
+            <StackLayout  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#F0F0F0" MinimumHeightRequest="20" Padding="5,15,5,15">
+                <SearchBar HorizontalOptions="FillAndExpand" TextChanged="Handle_TextChanged" Text="{Binding SearchTerm}" />
+            </StackLayout>
+            <StackLayout Padding="15,25,15,15" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <ListView x:Name="listView"
+                          ios:ListView.SeparatorStyle="FullWidth"
+                          CachingStrategy="RecycleElement"
+                          ItemTapped="Handle_ItemTapped"
+                          ItemsSource="{Binding Users}"
+                          RowHeight="50"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Horizontal" Spacing="5">
+                                    <StackLayout Grid.Row="0" HorizontalOptions="StartAndExpand" Grid.Column="0" VerticalOptions="Start" Orientation="Vertical" Spacing="5">
+                                        <Label Text="{Binding name}" HorizontalOptions="FillAndExpand" FontSize="13"/>
+                                        <Label Text="{Binding email}" HorizontalOptions="FillAndExpand" FontSize="13" />
+                                    </StackLayout>
+                                    <Label Text="{Binding gender}" HorizontalOptions="End"  VerticalOptions="Start" FontSize="13"/>
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer   Command="{Binding BindingContext.GoToItemCommand, Source={x:Reference Name=HomePageName}}" CommandParameter="{Binding id}"/>
+                                    </StackLayout.GestureRecognizers>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                    <ListView.Footer>
+                        <StackLayout IsVisible="{Binding ShowLoadMore}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="40" Padding="15,15,15,15">
+
+                            <Button Text="Load More" HorizontalOptions="FillAndExpand" BackgroundColor="#F0F0F0" Command="{Binding LoadMoreCommand}" />
+
+                        </StackLayout>
+                    </ListView.Footer>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

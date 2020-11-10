@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="GoRestXamarin.Views.AppHome">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="15,15,15,15">
+            <Label Text="Welcome to the my GoRest demo!"/>
+            <Label Text="This is written in xamarin forms using the prism framweork"/>
+            <Label Text="Click on the menu button and tap search to see a list of all users"/>
+            <Label Text="Tap add in the top right to view the add page"/>
+            <Label Text="Tapping on a user will bring up a user profile page to view more details"/>
+            <Label Text="You can search for a user by name by typing in the search bar. this searches the first and last name of any users in the existing list"/>
+            <Label Text="Scroll to the bottom of the list and tap Load more to view the next page of results"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/stephenshaw/Documents/Github/GoRest/Xamarin/src/GoRestXamarin/GoRestCommon/GoRestCommon.csproj": {}
+  },
+  "projects": {
+    "/Users/stephenshaw/Documents/Github/GoRest/Xamarin/src/GoRestXamarin/GoRestCommon/GoRestCommon.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/stephenshaw/Documents/Github/GoRest/Xamarin/src/GoRestXamarin/GoRestCommon/GoRestCommon.csproj",
+        "projectName": "GoRestCommon",
+        "projectPath": "/Users/stephenshaw/Documents/Github/GoRest/Xamarin/src/GoRestXamarin/GoRestCommon/GoRestCommon.csproj",
+        "packagesPath": "/Users/stephenshaw/.nuget/packages/",
+        "outputPath": "/Users/stephenshaw/Documents/Github/GoRest/Xamarin/src/GoRestXamarin/GoRestCommon/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/stephenshaw/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

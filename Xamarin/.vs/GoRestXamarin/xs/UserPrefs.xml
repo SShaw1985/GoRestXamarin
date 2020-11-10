@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{DBA4C902-A29B-4D26-9C25-AFCD4FD2898F}|Default">
+  <MonoDevelop.Ide.ItemProperties.Targets.GithubRepoExample.Droid PreferredExecutionTarget="Android.my_device" />
+  <MonoDevelop.Ide.ItemProperties.Targets.GoRestXamarin.Droid PreferredExecutionTarget="Android.my_device" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GoRestXamarin" expanded="True">
+            <Node name="Shared" expanded="True" />
+            <Node name="Targets" expanded="True">
+              <Node name="GoRestXamarin.Droid" expanded="True" selected="True">
+                <Node name="Packages" expanded="True" />
+                <Node name="Resources" expanded="True">
+                  <Node name="drawable" expanded="True" />
+                  <Node name="layout" expanded="True" />
+                  <Node name="values" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="GoRestXamarin.iOS" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>src/GoRestXamarin/GoRestCommon/GoRestCommon.csproj</String>
+    <String>GoRestMVC/GoRestMVC.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Targets.GoRestXamarin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.72E608B6-69F6-43A3-9976-1B8F5CC6664D" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/stephenshaw/Documents/Github/GoRest/Xamarin/src/GoRestXamarin/Services/GoRestService.cs" relfile="src/GoRestXamarin/Services/GoRestService.cs" line="45" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

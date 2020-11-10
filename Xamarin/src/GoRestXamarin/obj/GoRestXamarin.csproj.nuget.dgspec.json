@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/stephenshaw/Documents/Github/GoRest/Xamarin/src/GoRestXamarin/GoRestXamarin.csproj": {}
+  },
+  "projects": {
+    "/Users/stephenshaw/Documents/Github/GoRest/Xamarin/src/GoRestXamarin/GoRestXamarin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/stephenshaw/Documents/Github/GoRest/Xamarin/src/GoRestXamarin/GoRestXamarin.csproj",
+        "projectName": "GoRestXamarin",
+        "projectPath": "/Users/stephenshaw/Documents/Github/GoRest/Xamarin/src/GoRestXamarin/GoRestXamarin.csproj",
+        "packagesPath": "/Users/stephenshaw/.nuget/packages/",
+        "outputPath": "/Users/stephenshaw/Documents/Github/GoRest/Xamarin/src/GoRestXamarin/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/stephenshaw/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Mobile.BuildTools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.4.0.638, )"
+            },
+            "MonkeyCache": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "MonkeyCache.FileStore": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "MonkeyCache.SQLite": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "Plugin.Multilingual": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Prism.DryIoc.Forms": {
+              "target": "Package",
+              "version": "[7.1.0.431, )"
+            },
+            "Prism.QuickStart.MFractor.Config": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "PropertyChanged.Fody": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.5.13, )"
+            },
+            "Xam.Plugin.Connectivity": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[0.11.0-preview, )"
+            },
+            "Xamarin.FFImageLoading.Forms": {
+              "target": "Package",
+              "version": "[2.4.3.840, )"
+            },
+            "Xamarin.FFImageLoading.Transformations": {
+              "target": "Package",
+              "version": "[2.4.3.840, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1560, )"
+            },
+            "akavache": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "modernhttpclient": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            }
+          },
+          "imports": [
+            "portable-net45+win8+wp8+wpa81",
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
